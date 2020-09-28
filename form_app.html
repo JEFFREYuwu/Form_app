@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!-- <head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head> -->
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/form" method="post">
+  <div  >
+    <label >Email address:</label>
+    <input type="email" class="form-control" name="email" value=" " placeholder="name@gmail.com">
+  </div>
+  
+   <div >
+   <label>Do you provide care for or have children of your own ?</label>
+   <input type="radio" name="kids_work" id="kids_work1" value="kid_work1"> YES </input><br>
+   <input type="radio" name="kids_work" id="kids_work2" value="kid_work2"> NO </input><br>
+  </div>
+
+
+
+
+  <div >
+   <label>Have you worked with kids before?</label>
+   <input type="radio" name="carer" id="carer1" value="carer1"> YES </input><br>
+   <input type="radio" name="carer" id="carer2" value="carer2"> NO </input><br>
+  </div>
+  
+  <div >
+    <label>Do you have programming experience?</label>
+   <input type="radio" name="experience" id="experience1" value="experience1"> YES </input><br>
+   <input type="radio" name="experience" id="experience2" value="experience2"> NO </input><br>
+  </div>
+  
+  <div >
+    <p>Please sell yourself and explain why you are suitable for this job</p>
+    <textarea  name="cover letter" rows="15"></textarea>
+  </div>
+  
+  <div  style=" margin: auto; width: 25%;" >
+  <p>UPLOAD YOUR CV</p>
+  <br><br>
+    <input  type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+   
+   <br>
+   <div style=" margin: auto; width: 25%;" ><button type="submit" >Submit</button></div>
+  </form>
+</body>
+</html>

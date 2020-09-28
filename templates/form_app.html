@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"></head> 
+<body>
+
+<div>
+<br><br>
+<h2>HTML Forms</h2>
+<br>
+<form action="/form" method="post"  enctype = "multipart/form-data">
+  
+<div  >
+    <label >Name:</label>
+    <input type="text" class="form-control" name="indentity" value=" " placeholder="PLEASE ENTER FIRST AND LAST NAME">
+  </div>
+
+  <div  >
+    <label >Email address:</label>
+    <input type="email" class="form-control" name="email" value=" " placeholder="name@gmail.com">
+  </div>
+  
+   <div >
+   <p>Do you provide child care, or have a child of your own ?</p>
+  <input type="radio" id="YES" name="work_kids" value="YES">
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="work_kids" value="NO">
+  <label for="NO">NO</label><br>
+    </div>
+
+    <div >
+   <p>Have you worked with kids before?</p>
+    <input type="radio" id="YES" name="carer" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="carer" value="NO">
+    <label for="NO">NO</label><br>
+      </div>
+
+    <div >
+    <p>Do you have programming experience?</p>
+    <input type="radio" id="YES" name="experience" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="experience" value="NO">
+    <label for="NO">NO</label><br>
+    </div>
+
+    <div >
+    <p>Have you ever been a teacher?</p>
+    <input type="radio" id="YES" name="teacher" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="teacher" value="NO">
+    <label for="NO">NO</label><br>
+    </div>
+
+
+    <div >
+    <p>Have you ever done public speaking?</p>
+    <input type="radio" id="YES" name="speak" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="speak" value="NO">
+    <label for="NO">NO</label><br>
+     </div>
+
+     <div >
+    <p>Have you ever been a manager?</p>
+    <input type="radio" id="YES" name="manager" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="manager" value="NO">
+    <label for="NO">NO</label><br>
+     </div>
+
+    <div >
+    <p>Have you ever run a public events?</p>
+    <input type="radio" id="YES" name="events" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="events" value="NO">
+    <label for="NO">NO</label><br>
+     </div>
+
+     
+    <div >
+     <p>Do you like to learn new things?</p>
+    <input type="radio" id="YES" name="learn" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="learn" value="NO">
+    <label for="NO">NO</label><br>
+     </div >
+
+     
+    <div >
+     <p>Do you like to organise and prepare for things ahead of time?</p>
+    <input type="radio" id="YES" name="prepare" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="NO" name="prepare" value="NO">
+    <label for="NO">NO</label><br>
+    </div >
+
+
+  <div >
+    <p>Please sell yourself and explain why you are suitable for this job</p>
+    <textarea  name="cover_letter" rows="5" cols="50"></textarea>
+  </div>
+
+  <div  style=" margin: auto; width: 25%;" >
+  <p>UPLOAD YOUR CV</p>
+  <br><br>
+    <input   type="file"  name="file" >
+  </div>
+
+   <button type="submit" >Submit</button></div>
+  </form>
+</div>
+</body>
+</html>
